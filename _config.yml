@@ -23,14 +23,11 @@ title:                 ManuGilDev
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
-My personal blog with articles about C++, Computer Graphics and all the stuff that goes through my mind.
+description:           My personal blog with articles about C++, Computer Graphics and all the stuff that goes through my mind.
 
 
 # A shorter description for the sidebar.
-tagline:               >
-Computer Graphics and C++
-
+tagline:               Computer Graphics and C++
 # A list of keywords for your blog
 keywords:              [cg, computer graphics, c++, cpp, vulkan, opengl, shaders, pbr, 3d, graphics, computer science]
 
