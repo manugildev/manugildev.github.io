@@ -1,0 +1,33 @@
+/* Print Style Sheet */
+@media print {
+	body { background:white; font-size:10pt; margin:0 }
+	h1, h2, h3, h4, h5, h6 { page-break-after:avoid; page-break-inside:avoid }
+	blockquote, table, pre { page-break-inside:avoid }
+	ul, ol, dl  { page-break-before:avoid }
+	img { page-break-inside:avoid; page-break-after:avoid; }
+	.vs-triplelayout .vs-nav .vs-nav-left, .vs-triplelayout .vs-nav .vs-nav-right { display: none; }
+}
+
+
+
+/*
+     FILE ARCHIVED ON 21:06:16 Aug 26, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:38:45 Nov 05, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 16.456 (3)
+  exclusion.robots.policy: 0.133
+  captures_list: 70.298
+  PetaboxLoader3.datanode: 61.238 (4)
+  RedisCDXSource: 0.546
+  esindex: 0.01
+  exclusion.robots: 0.143
+  PetaboxLoader3.resolve: 1068.983
+  load_resource: 1091.073
+  LoadShardBlock: 50.007 (3)
+*/

@@ -1,0 +1,76 @@
+/* jQuery Ajax Mail Send Script */
+
+(function($) {
+	
+	$(function() {
+		
+		var contactForm = $( '#contact-form' );
+		
+		var $alert = $( '.site-alert' );
+		
+		contactForm.submit(function()
+		{
+			if ( contactForm.valid() )
+			{
+				NProgress.start();
+				var formValues = $(this).serialize();
+				
+				$.post($(this).attr('action'), formValues, function(data)
+				{
+					if ( data == 'success' )
+					{
+						contactForm.clearForm();
+					}
+					else
+					{
+						$alert.addClass( 'error' );
+					}
+					
+					NProgress.done();
+					$alert.removeClass('slideOutRight').show().addClass('slideInLeft');
+					setTimeout(function() { $alert.removeClass('slideInLeft').addClass('slideOutRight'); },2000)
+				});
+			}
+			
+			return false
+		});
+	
+	});
+	
+	
+	$.fn.clearForm = function() {
+	  return this.each(function() {
+	    var type = this.type, tag = this.tagName.toLowerCase();
+	    if (tag == 'form')
+	      return $(':input',this).clearForm();
+	    if (type == 'text' || type == 'password' || tag == 'textarea')
+	      this.value = '';
+	    else if (type == 'checkbox' || type == 'radio')
+	      this.checked = false;
+	    else if (tag == 'select')
+	      this.selectedIndex = -1;
+	  });
+	};
+
+})(jQuery);
+/*
+     FILE ARCHIVED ON 20:35:28 Aug 26, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:38:41 Nov 05, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 114.858
+  esindex: 0.014
+  exclusion.robots: 0.203
+  PetaboxLoader3.resolve: 37.794
+  load_resource: 114.198
+  RedisCDXSource: 19.027
+  CDXLines.iter: 16.654 (3)
+  LoadShardBlock: 76.124 (3)
+  exclusion.robots.policy: 0.188
+  PetaboxLoader3.datanode: 145.706 (4)
+*/

@@ -1,0 +1,42 @@
+jQuery(document).ready(function($)
+{
+
+	// WP FIX: Comment Form Button Class
+	$( '#comments .form-submit #submit' ).addClass( 'button primary' );
+	
+	
+	// WP FIX: PORTFOLIO SINGLE NAV
+	fixPortfolioNav();
+	$( document ).ajaxComplete(function( event, request, settings )
+	{
+		fixPortfolioNav();
+	});
+	function fixPortfolioNav()
+	{
+		$( '.portfolio-nav .left-arrow a' ).addClass( 'icon button prev ajax' );
+		$( '.portfolio-nav .right-arrow a' ).addClass( 'icon button next ajax' );
+	}
+
+});
+// end DOCUMENT READY
+/*
+     FILE ARCHIVED ON 21:17:26 Aug 26, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:38:41 Nov 05, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 6.813
+  CDXLines.iter: 18.781 (3)
+  PetaboxLoader3.datanode: 40.307 (4)
+  LoadShardBlock: 34.113 (3)
+  exclusion.robots.policy: 0.205
+  esindex: 0.021
+  load_resource: 44.2
+  captures_list: 63.708
+  PetaboxLoader3.resolve: 23.831
+  exclusion.robots: 0.222
+*/
