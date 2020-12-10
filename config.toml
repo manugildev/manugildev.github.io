@@ -1,28 +1,29 @@
 baseURL = "https://example.com"
 languageCode = "en"
 DefaultContentLanguage = "en"
-title = "Website of Jane Doe"
+title = "Manuel Gil :: Software Engineer"
 theme = "anatole"
 summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
 
 # Enable Disqus
-#disqusShortname = ""
+# disqusShortname = ""
 
 # Google Analytics
-#googleAnalytics = "UA-123-45"
+# googleAnalytics = "UA-123-45"
 
 [params]
-title = "I'm Jane Doe"
-author = "Jane Doe"
-description = "Call me Jane"
+title = "Manuel Gil"
+author = "Manuel Gil"
+description = "Software Engineer | Computer Graphics | C++/Rust"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
 customCss = []
 customJs = []
 mainSections = ["post"]
+defaultPage = "about"
 images = ["images/site-feature-image.png"]
 doNotLoadAnimations = true
 # Google Site Verification
@@ -61,18 +62,18 @@ url = "mailto:mail@alexbilz.com"
 
   [[menu.main]]
   name = "Home"
-  identifier = "home"
+  identifier = "about"
   weight = 100
   url = "/"
-
-  [[menu.main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/post/"
+#
+#  [[menu.main]]
+#  name = "Posts"
+#  weight = 200
+#  identifier = "posts"
+#  url = "/post/"
 
   [[menu.main]]
   name = "About"
   weight = 300
   identifier = "about"
-  url = "/about/"
+  url = "/about"
