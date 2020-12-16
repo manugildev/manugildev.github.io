@@ -1,3 +1,6 @@
+###############################################################################
+## Main Settings
+###############################################################################
 baseURL = "https://example.com"
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -13,6 +16,9 @@ enableRobotsTXT = true
 # Google Analytics
 # googleAnalytics = "UA-123-45"
 
+###############################################################################
+## Params
+###############################################################################
 [params]
 title = "Manuel Gil"
 author = "Manuel Gil"
@@ -20,7 +26,7 @@ description = "Software Engineer | Computer Graphics | C++/Rust"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
-customCss = []
+customCss = ["css/custom.css"]
 customJs = []
 mainSections = ["post"]
 defaultPage = "about"
@@ -29,35 +35,40 @@ doNotLoadAnimations = true
 # Google Site Verification
 #googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
+###############################################################################
 ## Math settings
+###############################################################################
 [params.math]
 enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
 use = "katex"  # options: "katex", "mathjax". default is "katex".
 
+###############################################################################
 ## Social links
+###############################################################################
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
 [[params.socialIcons]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
-url = "https://de.linkedin.com/"
+url = "https://linkedin.com/manuel.gil"
 
 [[params.socialIcons]]
 icon = "fab fa-github"
 title = "GitHub"
-url = "https://github.com/lxndrblz/anatole/"
+url = "https://github.com/manugildev"
 
-[[params.socialIcons]]
-icon = "fab fa-instagram"
-title = "instagram"
-url = "https://www.instagram.com/"
+#[[params.socialIcons]]
+#icon = "fab fa-instagram"
+#title = "instagram"
+#url = "https://www.instagram.com/"
 
 [[params.socialIcons]]
 icon = "fas fa-envelope"
 title = "e-mail"
-url = "mailto:mail@alexbilz.com"
+url = "mailto:manugildev@gmail.com"
 
+###############################################################################
 ## Menu items
-
+###############################################################################
 [menu]
 
   [[menu.main]]
