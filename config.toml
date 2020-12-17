@@ -28,8 +28,7 @@ keywords = ""
 favicon = "favicons/"
 customCss = ["css/custom.css"]
 customJs = []
-mainSections = ["post"]
-defaultPage = "about"
+mainSections = [""]
 images = ["images/site-feature-image.png"]
 doNotLoadAnimations = true
 # Google Site Verification
